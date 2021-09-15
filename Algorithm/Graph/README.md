@@ -1,1 +1,24 @@
-##
+# Graph
+
+- 사물, 추상적 개념 사이 간 연결관계를 표현한다. 트리도 그래프의 종류이다.
+- 그래프의 요소 : 정점(Vertex), 간선(Edge), 차수(Degree)
+- 그래프의 유형 : 무향 그래프(Undirected Graph), 유향 그래프(Directed Graph), 가중치 그래프(Weighted Graph), 사이클 없는 방향그래프(DAG, Directed Acyclic Graph)
+- 완전 그래프 : 모든 정점에 대한 간선을 가진 그래프
+- 부분 그래프 : 일부의 정점이나 간선만을 가진 그래프
+
+
+## 그래프의 표현 방법
+- 인접 행렬(Adjacent matrix)
+- 인접 리스트(Adjacent List)
+
+# 그래프의 탐색 방법
+- 너비 우선 탐색 (Breadth First Search, BFS)
+- 깊이 우선 탐색 (Depth First Search, DFS)
+
+## ⭐ BFS
+- 인접한 정접을 모두 방문 한 후, 방문했던 정점 기준으로 인접한 정점들을 방문하는 방법
+- **FIFO**인 **Queue**를 이용한다.
+
+## ⭐ DFS
+- 한 방향으로 갈 수 있는 가장 깊은 곳 까지 방문 후, 가장 마지막에 만났던 갈림길 간선으로 와서 다시 다른 방향의 깊이를 탐색하는 방법
+- **LIFO**인 **Stack**을 이용한다.
