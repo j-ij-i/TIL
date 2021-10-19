@@ -24,7 +24,7 @@
 - DI나 AOP와 같은 기능을 지원
 - Enterprise Application 개발 시 복잡함을 해결하는 Spring 의 핵심
 
-Spring의 구조
+## Spring의 구조
 
 - **POJO**
 - **PSA**
