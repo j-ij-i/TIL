@@ -30,3 +30,28 @@
 - **PSA**
 - **IoC/DI**
 - **AOP**
+
+## Controller
+
+### @Controller
+
+- Controller class, Client의 요청 처리
+- class타입에 적용
+- @RequestMapping - 매핑 동시에 여러개 사용가능
+- 같은 URL 요청에도 HTTP method에 따라 구분해서 mapping 가능(get, post 등 구분)
+- @RequestParam을 이용해서 parameter 값 mapping이 가능하다.
+- @ModelAttribute를 이용해서 View에 사용할 Command 객체 이름을 변경 가능
+- @CookieValue를 이용해 Cooking 값, 이름 mapping 가능
+
+## View
+
+- ViewResolver - 논리적 view와 실제 jsp파일을 매핑 해줌. (servlet-context.xml에 존재)
+- **ModelAndView**를 이용해서 View 이름 명시적 지정, Model이 없을 땐 **String**으로 넘겨 줌.
+- 자동으로 RequestMapping 루트가 이름이 되는 경우 👉 1️⃣ 리턴 타입이 Map, Model 인 경우 2️⃣ 리턴타입 void이면서 ServletResponse나 HttpServletResponse타입의 parameter가 없는 경우
+- Redirect View - View에 **redirect:** 접두어를 붙이면 지정한 페이지로 redirect 된다.
+
+## Model
+
+- View에 전달, 담아야 하는 데이터
+- Map, ModelMap, Model을 통해 설정 가능 → 결국은 모두 Map형식!
+- @PathVariable을 이용해서 URI 템플릿 이용 가능 (RESTful 방식)
