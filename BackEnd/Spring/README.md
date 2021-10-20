@@ -31,10 +31,25 @@
 - **IoC/DI**
 - **AOP**
 
+## AOP(Aspect Oriented Programming)
+
+- 관점 지향 프로그래밍
+- 자주 쓰는 기능을 모듈화 하기 위해 사용
+- **모듈화** : 어떤 공통된 로직이나 기능을 하나의 단위로 묶는 것
+
+### AOP 주요 개념
+
+- **Aspect**: Advice + PointCut 을 합친 기능, 부가기능을 모듈화 함.
+- **Target** : Aspect를 적용할 곳.
+- **Advice** : 부가기능을 뜻함.
+- **JointPoint** : Advice가 적용될 위치와 지점.
+- **PointCut** : JointPoint의 상세한 내용, 많은 메소드 중에 부가기능을 적용할 메소드, 시점을 지정.
+
+# MVC 패턴
+
 ## Controller
 
-### @Controller
-
+- @Controller annotation과 @RequestMapping 선언으로 사용 가능
 - Controller class, Client의 요청 처리
 - class타입에 적용
 - @RequestMapping - 매핑 동시에 여러개 사용가능
