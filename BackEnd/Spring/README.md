@@ -70,3 +70,9 @@
 - View에 전달, 담아야 하는 데이터
 - Map, ModelMap, Model을 통해 설정 가능 → 결국은 모두 Map형식!
 - @PathVariable을 이용해서 URI 템플릿 이용 가능 (RESTful 방식)
+
+## Interceptor
+
+- Controller가 요청하기 전/후에 응답을 가로채서 데이터를 받는다.
+- 로깅, 정보수집, 제어 등의 기능을 제공
+- ex) 글 쓰기 페이지에서 현재 회원이 로그인 되어있는지 확인하는 작업에 사용
