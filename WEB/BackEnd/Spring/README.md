@@ -31,6 +31,17 @@
 - **IoC/DI**
 - **AOP**
 
+## IoC (Inversion of Control)
+
+- Object간의 연결 관계를 런타임에서 결정함.
+- 객체간 관계가 느슨하게 연결됨.
+- IoC의 구현방법 -> **DI**
+
+## DI(Dependency Injection - 의존성 지원)
+
+- 스프링의 설정파일이나, Annotation으로 객체간 의존관계를 설정할 수 있다.
+- 객체를 직접 생성 및 검색이 필요가 없어짐.
+
 ## AOP(Aspect Oriented Programming)
 
 - 관점 지향 프로그래밍
