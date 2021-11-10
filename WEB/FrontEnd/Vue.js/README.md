@@ -60,13 +60,13 @@
 - **v-text** : innerText 속성에 연결.
 - **v-html** : {{}}속 HTML을 텍스트가 아닌 **실제 HTML**으로 출력해 줌.
 - **v-once** : 데이터 변경 시 업데이트 되지 않는 일회성 보간 작동
-- **v-model** : **양방향** 바인딩 처리를 위해서 사용, Model과 ViewModel사이 데이터를 바인딩하는 디렉티브(한글의 경우, 한글자가 넘어가야지 적용->UNICODE문자 특성)
+- **v-model** : **양방향** 바인딩 처리를 위해서 사용, Model과 ViewModel사이 데이터를 바인딩하는 디렉티브(한글의 경우, 한글자가 넘어가야지 적용->UNICODE문자 특성) ex) `v-model.trim` (공백제거), `v-model.lazy` (엔터칠 때 전송), `v-model.number` (자동으로 숫자로 형변환)
 - **v-bind** : 엘리먼트 속성과 바인딩 처리, 약어 `:`로 표현 가능
 - **v-show** : 조건에 따라 화면을 랜더링 하며 style의 display를 변경한다. false일 경우에 display : none 적용
 - **v-if**, **v-else-if**, **v-else** : 조건에 따라 엘리먼트를 화면에 렌더링, false일 경우 엘리먼트 삭제됨.
 - **v-for** : 배열이나 객체의 반복에 사용, 배열보다 1개 많게 설정해주면 자동으로 index가 나타남. (v-if와 같이 사용을 권하지 않음, for가 if보다 우선순위가 높기 때문에 if를 거치지 않은 불필요한 for문이 나오기 때문에)
 - **v-cloak** : Vue Instance가 준비될 때까지 mustache 바인딩을 숨기는데 사용, Vue Instance가 준비되면 v-cloak는 제거.
-- **v-on** : DOM Event를 받기 위해 사용, 약어 `@`로 표현 가능
+- **v-on** : DOM Event를 받기 위해 사용, method의 이름으로 받아오며 약어 `@`로 표현 가능
 
 ## Vue method
 
@@ -103,6 +103,11 @@
 - `computed`는 종속된 data가 변경되었을 경우 다시 그 data를 계산하여 캐싱작업을 해줌.
 - `watch`는 data가 변경될 때 다른 data도 변경하는 작업을 한다.
 
+## Vue Component
+
+- Vue의 가장 강력한 기능 중 하나, 코드를 캡슐화 함
+- SPA(Single-Page Applications)가 가능하게 됨.
+
 ## Axios
 
 - Axios는 **Vue에서 권고하는 HTTP 통신 라이브러리**
@@ -117,7 +122,3 @@
 - `axios.post('URL 주소').then().catch()`
 - `axios({옵션속성})`
 - 계속되는 `then` 중복을 막기위해 `async, await` 등장 및 사용
-
-## vue-router
-
--
