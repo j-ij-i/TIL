@@ -108,6 +108,8 @@
 - Vue의 가장 강력한 기능 중 하나, 코드를 캡슐화 함
 - SPA(Single-Page Applications)가 가능하게 됨.
 
+## Router
+
 ## Axios
 
 - Axios는 **Vue에서 권고하는 HTTP 통신 라이브러리**
@@ -122,3 +124,14 @@
 - `axios.post('URL 주소').then().catch()`
 - `axios({옵션속성})`
 - 계속되는 `then` 중복을 막기위해 `async, await` 등장 및 사용
+
+## SFC (Single File Component)
+
+- 확장자가 '.vue'로 끝나는 파일을 말함.
+- vue의 구성요소 : template, script, style
+- 구문 강조 및 전처리기를 통한 기능확장 가능
+
+## Vuex
+
+- Vue에 대한 상태관리 패턴 + 라이브러리
+- 중앙 집중식 저장소 역할을 한다.
